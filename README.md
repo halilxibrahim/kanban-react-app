@@ -1,3 +1,9 @@
+# Kanban App
+
+ Kanban application that I developed with React.js. 
+ Made using scss and react beautiful dnd library.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
