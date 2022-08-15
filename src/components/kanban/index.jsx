@@ -30,6 +30,9 @@ const Kanban = () => {
                      <div className="kanban_section_title">
                         {section.title}
                      </div>
+                     <div className="kanban_section_content">
+                        
+                     </div>
                   </div>
                 )}
             </Droppable>
