@@ -11,11 +11,11 @@ const mockData = [
             },
             {
                 id: uuidv4(),
-                title: 'Learn Git'
+                title: 'Learn React.js'
             },
             {
                 id: uuidv4(),
-                title: 'Learn Python'
+                title: 'Learn Tailwind CSS'
             },
         ]
     },
@@ -39,7 +39,11 @@ const mockData = [
         tasks: [
             {
                 id: uuidv4(),
-                title: 'Learn HTML'
+                title: 'Learn TypeScript'
+            },
+            {
+                id: uuidv4(),
+                title: 'Learn Next.js'
             }
         ]
     }
