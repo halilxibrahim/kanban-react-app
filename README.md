@@ -1,6 +1,7 @@
 # Kanban App
 
  Kanban application that I developed with React.js. 
+ 
  Made using scss and react beautiful dnd library.
 
 
