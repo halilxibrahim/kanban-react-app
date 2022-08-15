@@ -1,4 +1,5 @@
 import './App.scss';
+import Kanban from './components/kanban';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <h1 style={{ marginBottom:'20px'}}>
         Kanban Arayüz
       </h1>
+      <Kanban/>
     </div>
   );
 }

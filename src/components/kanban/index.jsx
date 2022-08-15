@@ -1,12 +1,13 @@
-import './kanban.scc'
+import './kanban.scss'
 import { DrahDropContext, Draggable, Droppable, DragDropContext } from 'react-beautiful-dnd'
 import mockData from '../../mockData'
+
 import { useState } from 'react'
 
 
 const Kanban = () => {
-  
-  const [data, setData] = useState(mockData)
+  const [data, setData ] = useState(mockData)
+
   const onDragEnd = result => {
     console.log(result)
   }
@@ -15,13 +16,24 @@ const Kanban = () => {
     <DragDropContext onDragEnd={onDragEnd}> 
       <div className="kanban">
         {
-          data.map(section => {
+          data.map(section => (
             <Droppable
                 key={section.id}
+                droppableId={section.id}
             >
-
+                {(provided) => (
+                  <div
+                    {...provided.droppableProps}
+                    className='kanban_section'
+                    ref={provided.innerRef}
+                  >
+                     <div className="kanban_section_title">
+                        {section.title}
+                     </div>
+                  </div>
+                )}
             </Droppable>
-          })
+          ))
         }
       </div> 
     </DragDropContext>
